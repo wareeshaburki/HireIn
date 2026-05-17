@@ -8,12 +8,14 @@ export default function Navbar() {
     { name: "About Us", id: "about" },
     { name: "Founders", id: "founders" },
     { name: "How it Works", id: "howItWorks" }, 
+    { name: 'FAQs' , id : "faqs"},
+    { name: "Contact" , id : 'contact'}
   ];
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: "-50% 0px -40% 0px", 
-      threshold: 0,
+      rootMargin: "-30% 0px -30% 0px", 
+      threshold: 0.1,
     };
     const callback = (entries) => {
       entries.forEach((entry) => {

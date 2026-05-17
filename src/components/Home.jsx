@@ -2,6 +2,9 @@ import React from "react";
 import Navbar from "./Navbar";
 import About from "./About";
 import Founder from "./Founder";
+import HowItWorks from "./HowItWorks";
+import FAQ from "./FAQ";
+import Contact from "./Contact";
 
 export default function Home() {
   return (
@@ -75,6 +78,15 @@ export default function Home() {
       </section>
       <section id="founders">
         <Founder />
+      </section>
+      <section id="howItWorks">
+        <HowItWorks/>
+      </section>
+      <section id="faqs">
+        <FAQ/>
+      </section>
+      <section id="contact">
+        <Contact/>
       </section>
     </div>
   );
