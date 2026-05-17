@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 
 export default function Navbar() {
   return (
-    <nav className='flex fixed top-0 left-0 w-full h-20 justify-between items-center bg-white/10 backdrop-blur-sm px-10 z-50 shadow-sm border-b border-white/20'>
+    <nav className='flex fixed top-0 left-0 w-full h-20 justify-between items-center bg-white px-10 z-50 shadow-sm border-b border-white/20'>
       <Link to="/" className='flex items-center'>
         <img src="/hire in.png" alt="HireIn logo" className='w-20 h-auto'/>
         <h1 className='text-[#3a8b95] text-3xl font-bold'>HireIn</h1>
