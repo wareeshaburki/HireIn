@@ -4,6 +4,8 @@ import './index.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
+import About from './components/About'
+import Founder from './components/Founder'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

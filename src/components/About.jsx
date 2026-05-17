@@ -1,9 +1,10 @@
 import React from "react";
+import Navbar from "./Navbar";
 
 export default function About() {
   return (
     <div className="min-h-screen w-full font-sans flex justify-between items-center">
-      <div className="flex justify-between items-center px-10 py-10">
+      <div className="flex justify-between mt-10 items-center px-10 py-10">
         <section className="gap-3 flex flex-col justify-center items-left max-w-[50%]">
           <h1 className="text-4xl font-bold text-[#3a8b95] mb-3">About Us</h1>
           <p className="text-gray-700">
