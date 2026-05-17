@@ -3,21 +3,18 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
-
   const navLinks = [
     { name: "Home", id: "home" },
     { name: "About Us", id: "about" },
     { name: "Founders", id: "founders" },
     { name: "How it Works", id: "howItWorks" }, 
   ];
-
   useEffect(() => {
     const options = {
       root: null,
       rootMargin: "-50% 0px -40% 0px", 
       threshold: 0,
     };
-
     const callback = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -25,14 +22,11 @@ export default function Navbar() {
         }
       });
     };
-
     const observer = new IntersectionObserver(callback, options);
-
     navLinks.forEach((link) => {
       const section = document.getElementById(link.id);
       if (section) observer.observe(section);
     });
-
     return () => observer.disconnect();
   }, []);
 
@@ -60,7 +54,6 @@ export default function Navbar() {
         <img src="/hire in.png" alt="HireIn logo" className="w-20 h-auto" />
         <h1 className="text-[#3a8b95] text-3xl font-bold">HireIn</h1>
       </button>
-
       <ul className="hidden md:flex items-center gap-8 font-medium text-gray-700">
         {navLinks.map((link) => (
           <li key={link.id}>
@@ -77,7 +70,6 @@ export default function Navbar() {
           </li>
         ))}
       </ul>
-
       <div className="flex items-center gap-4">
         <Link
           to="/login"
